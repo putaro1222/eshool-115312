@@ -1,25 +1,13 @@
-<%= render "shared/header" %>
+<%= render "shared/second-header"%>
 
-<%# 講義の概要 %>
 <div class="item-show">
   <div class="item-box">
     <h2 class="name">
       <%= @curriculum.class_name%>
     </h2>
     <div class="item-img-content">
-      <%= image_tag @curriculum.image ,class:"item-box-img" %>
+      <%= image_tag @curriculum.class_url ,class:"item-box-img" %>
     </div>
-
-    
-    <% if user_signed_in? %>
-      <% if current_user.id == @curriculum.user_id %>
-        <%= link_to "講義の編集", edit_curriculum_path(@curriculum.id), method: :get, class: "item-red-btn" %>
-        <p class="or-text">or</p>
-        <%= link_to "削除", curriculum_path(@curriculum.id), method: :delete, class:"item-destroy" %>
-      <% else current_user.id != @curriculum.user_id %>
-        <%= link_to "受講画面に進む", curriculum_studies_path(@curriculum.id) ,class:"item-red-btn"%>
-      <% end %>
-    <% end %>
     
 
     <table class="detail-table">
@@ -77,5 +65,4 @@
   <a href="#" class="another-item"><%= @curriculum.category.name %>をもっと見る</a>
   
 </div>
-
-<%= render "shared/footer" %>
+<%= render "shared/second-footer"%>

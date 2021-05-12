@@ -8,9 +8,10 @@ class Curriculum < ApplicationRecord
     validates :class_info
     validates :image
    end
-   
+
   validates :category_id, numericality: { other_than: 1 } 
   
   has_one_attached :image
   belongs_to :user
+  has_one :study
 end
