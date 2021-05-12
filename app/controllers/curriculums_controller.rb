@@ -50,8 +50,8 @@ private
     @curriculum = Curriculum.find(params[:id])
   end
 
-  # def move_to_index
-  #   redirect_to root_path if current_user.id != @curriculum.user_id || @curriculum.order.present?
-  # end
+  def move_to_index
+    redirect_to root_path if current_user.id != @curriculum.user_id
+  end
 end
 
