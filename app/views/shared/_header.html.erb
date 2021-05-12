@@ -10,20 +10,19 @@
     </form>
   </div>
   <div class='nav'>
-    <ul class='lists-left'>
-      <li><%= link_to 'カテゴリー', "#", class: "category-list" %></li>
-      <li><%= link_to '投稿する', new_curriculum_path, class: "brand-list" %></li>
-    </ul>
     <ul class='lists-right'>
-      <%# deviseを導入できたら、ログインの有無で表示が変わるように分岐しましょう%>
+      <%# ログインの有無で表示が変わるように分岐%>
       <% if user_signed_in? %>
-        <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
-        <li><%= link_to '退校', destroy_user_session_path, method: :delete, class: "logout" %></li>
+        <ul class='lists-left'>
+          <li><%= link_to '投稿する', new_curriculum_path, class: "brand-list" %></li>
+        </ul>
+        <li><%= link_to 'マイページ👤', "#", class: "user-nickname" %></li>
+        <li><%= link_to '下校', destroy_user_session_path, method: :delete, class: "logout" %></li>
       <% else %>
         <li><%= link_to '登校', new_user_session_path, class: "login" %></li>
         <li><%= link_to '入学', new_user_registration_path, class: "sign-up" %></li>
       <% end %>
-      <%# //deviseを導入できたら、ログインの有無で表示が変わるように分岐しましょう%>
+      <%# //ログインの有無で表示が変わるように分岐%>
     </ul>
   </div>
 </header>
