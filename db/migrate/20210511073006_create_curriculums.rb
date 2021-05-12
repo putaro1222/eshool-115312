@@ -5,6 +5,7 @@ class CreateCurriculums < ActiveRecord::Migration[6.0]
       t.text    :class_info,      null: false
       t.string  :class_url,       null: false
       t.integer :category_id,     null: false
+      t.references :user,         null: false, foreign_key: true
       t.timestamps
     end
   end

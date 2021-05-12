@@ -12,9 +12,6 @@
     <p class='service-explain'>
       フリマアプリです
     </p>
-    <div class='store-btn'>
-      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
-    </div>
   </div>
   <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
 
@@ -120,10 +117,24 @@
 
   <%# 商品一覧 %>
   <div class='item-contents'>
-    <h2 class='title'>ピックアップカテゴリー</h2>
+    <h2 class='title'>New Section</h2>
     <%= link_to '新規投稿商品', "#", class: "subtitle" %>
     <ul class='item-lists'>
 
+    <% @curriculums.each do |curriculum| %>
+       <li class='list'>
+        <%= link_to curriculum_path(curriculum.id), method: :get do %>
+        <div class='item-img-content'>
+          <%= image_tag curriculum.image, class: "item-img" %>
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= curriculum.class_name %> 
+          </h3>
+        </div>
+        <% end %>
+       </li>
+      <% end %>
       
 
 

@@ -8,4 +8,6 @@ class User < ApplicationRecord
 
   validates :nickname, presence: true
   validates :sex_id, :area_id, numericality: { other_than: 1 } 
+
+  has_many :curriculums
 end
