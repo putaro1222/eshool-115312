@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: eshool_115312_production
-  username: eshool_115312
-  password: <%= ENV['ESHOOL_115312_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
