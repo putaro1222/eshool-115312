@@ -4,9 +4,10 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 2vh 15vw;
+  padding: 2vh 10vw;
   display: flex;
   flex-direction: column;
+  background-color: lightblue;
 }
 
 .search-bar-contents {
@@ -15,16 +16,10 @@
   align-items: center;
 }
 
-.furima-icon {
-  width: 10vw;
-  margin-right: 10vw;
-}
-
 .search-form {
   width: 50vw;
   height: 5vh;
   display: flex;
-  margin-bottom: 5px;
 }
 
 .search-form>.input-box {
