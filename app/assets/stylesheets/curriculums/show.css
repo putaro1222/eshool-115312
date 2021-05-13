@@ -12,7 +12,7 @@
 .item-box {
   background-color: #FFF;
   width: 70vw;
-  min-width: 1200px;
+  min-width: 1000px;
   padding: 10vh 15vw;
   display: flex;
   flex-direction: column;
@@ -28,9 +28,10 @@
 .item-box-img {
   height: 50vh;
   width: 60vw;
-  min-height: 500px;
+  min-height: 400px;
   background-color: rgb(205, 202, 202);
   object-fit: contain;
+  background-color: #FFF;
 }
 
 .item-price-box {
@@ -52,12 +53,14 @@
 
 .item-red-btn {
   text-align: center;
-  background-color: #ea352d;
+  background-color:lightskyblue;
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
   margin: 20px 0px;
   padding: 2vh 10vw;
+  border: 6px groove lightblue;
+  border-radius: 100vh
 }
 
 .or-text {
@@ -71,6 +74,8 @@
   color: black;
   margin: 20px 0px;
   padding: 2vh 10vw;
+  border: 6px groove darkgray;
+  border-radius: 100vh
 }
 
 .item-explain-box {

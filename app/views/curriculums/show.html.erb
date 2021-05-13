@@ -14,7 +14,6 @@
     <% if user_signed_in? %>
       <% if current_user.id == @curriculum.user_id %>
         <%= link_to "講義の編集", edit_curriculum_path(@curriculum.id), method: :get, class: "item-red-btn" %>
-        <p class="or-text">or</p>
         <%= link_to "削除", curriculum_path(@curriculum.id), method: :delete, class:"item-destroy" %>
       <% else current_user.id != @curriculum.user_id %>
         <%= link_to "受講画面に進む", curriculum_studies_path(@curriculum.id) ,class:"item-red-btn"%>

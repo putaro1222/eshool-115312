@@ -52,13 +52,16 @@
 .lists-left {
   display: flex;
   min-width: 200px;
+  transform:translateY(0%) translateX(240%)
 
 }
 
 .brand-list {
   text-decoration: none;
-  color: #333333;
-  padding-left: 450px;
+  border-radius: 100vh;
+  color: #fff;
+  background: blue;
+  border: 6px ridge darkblue;
 }
 
 .lists-right {
@@ -73,12 +76,19 @@
   margin-right: 3vw;
   color: #333333;
   font-weight: bold;
+  color: #fff;
+  background: blue;
+  border: 6px ridge darkblue;
+  border-radius: 100vh;
 }
 
 
 .logout {
   text-decoration: none;
-  color: #333333;
+  color: #fff;
+  background: blue;
+  border: 6px ridge darkblue;
+  border-radius: 100vh;
 }
 
 .login {
@@ -86,9 +96,17 @@
   line-height: 32px;
   margin-right: 3vw;
   color: #333333;
+  color: #fff;
+  background: blue;
+  border: 6px ridge darkblue;
+  border-radius: 100vh;
 }
 
 .sign-up {
   text-decoration: none;
   color: #333333;
+  color: #fff;
+  background: blue;
+  border: 6px ridge darkblue;
+  border-radius: 100vh;
 }

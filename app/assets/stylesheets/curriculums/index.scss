@@ -4,6 +4,7 @@ a {
 
 .main {
   background: #f8f8f8;
+  
 }
 
 .title-contents {
@@ -83,6 +84,7 @@ a {
 
 .item-img-content {
   position: relative;
+  background-color: #FFF;
 }
 
 .item-img {
@@ -111,6 +113,8 @@ a {
   font-size: 1.5vh;
   display: flex;
   justify-content: space-between;
+  transform:translateY(0%) translateX(40%)
+  
 }
 
 

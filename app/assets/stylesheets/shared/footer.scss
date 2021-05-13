@@ -4,13 +4,16 @@
   color: #272727;
   background-color: #FFF;
   text-align: center;
-  
 }
 
 .footer-contents {
   // display: flex;
   position: absolute; top: 180px;
   margin-left: 0px;
+  border: 1px solid;
+  border-color: #031de2;
+  border-radius: 8px;
+  transform:translateY(10%) translateX(30%)
 }
 
 .furima-details {
@@ -39,4 +42,8 @@
 }
 
 .furima-foot {
+  border: 1px solid;
+  border-color: #031de2;
+  border-radius: 8px;
+  transform:translateY(-250%) translateX(12%)
 }
