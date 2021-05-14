@@ -7,13 +7,12 @@
 }
 
 .footer-contents {
-  // display: flex;
   position: absolute; top: 180px;
   margin-left: 0px;
   border: 1px solid;
   border-color: #031de2;
   border-radius: 8px;
-  transform:translateY(10%) translateX(30%)
+  transform:translateY(10%) translateX(20%)
 }
 
 .furima-details {
@@ -21,15 +20,16 @@
 }
 
 .footer-content-head {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  text-decoration: underline blue;
 }
 
 .footer-link {
   color: #272727;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 50px;
 }
 
 .logo-white {
