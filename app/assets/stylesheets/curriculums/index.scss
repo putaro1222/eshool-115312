@@ -9,6 +9,7 @@ a {
 
 .title-contents {
   width: 100vw;
+  height: 500px;
   background-image: image-url('furima-header01.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,18 +18,20 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 5vh 15vw;
+  padding: 40vh 15vw;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .service-title {
   font-size: 8vh;
+  transform:translateY(-200%) translateX(-20%)
 }
 
 .service-explain {
   font-size: 2.5vh;
   line-height: 40px;
+  transform:translateY(-500%) translateX(-15%)
 }
 
 .store-btn {
