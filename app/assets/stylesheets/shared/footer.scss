@@ -1,18 +1,15 @@
 .footer {
-  width: 300px;
-  height: 100vh;
-  color: #272727;
-  background-color: #FFF;
+  width: 100vw;
+  padding: 5vh 0;
+  color: #FFF;
+  background-color: #272727;
   text-align: center;
 }
 
 .footer-contents {
-  position: absolute; top: 180px;
-  margin-left: 0px;
-  border: 1px solid;
-  border-color: #031de2;
-  border-radius: 8px;
-  transform:translateY(10%) translateX(20%)
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
 }
 
 .furima-details {
@@ -23,11 +20,10 @@
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 25px;
-  text-decoration: underline blue;
 }
 
 .footer-link {
-  color: #272727;
+  color: #fff;
   font-size: 14px;
   line-height: 50px;
 }
