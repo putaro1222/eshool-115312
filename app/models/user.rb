@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+         :recoverable, :rememberable, :validatable, :omniauthable, omniauth_providers: [:facebook, :google_oauth2]
   
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :area
@@ -11,4 +11,5 @@ class User < ApplicationRecord
 
   has_many :curriculums
   has_many :studies
+  has_many :sns_credentials
 end
