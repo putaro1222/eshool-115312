@@ -23,8 +23,6 @@
       <% else %>
         <li><%= link_to '登校', new_user_session_path, class: "login" %></li>
         <li><%= link_to '入学', new_user_registration_path, class: "sign-up" %></li>
-        <li><%= link_to "Facebookで登録", user_facebook_omniauth_authorize_path, method: :post, class: "sign-up" %></li>
-        <li><%= link_to "Googleで登録", user_google_oauth2_omniauth_authorize_path, method: :post, class: "sign-up" %></li>
       <% end %>
       <%# //ログインの有無で表示が変わるように分岐%>
     </ul>
